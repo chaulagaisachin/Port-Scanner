@@ -18,7 +18,7 @@ def PortScan(target_host, target_ports):
     try:
         target_ip = gethostbyname(target_host)
     except:
-        print("Cannot Resolve Target Host or Its not reachable ! ! ! ")
+        print("The program cannot resolve target host or else it is not reachable !")
     try:
         target_name = gethostbyaddr(target_ip)
         print(f"[*] Scan Results for : {target_name[0]}")
